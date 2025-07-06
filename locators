@@ -1,0 +1,15 @@
+driver.find_element(By.NAME, "name") # поле Имя
+driver.find_element(By.NAME, "email") # поле Email
+driver.find_element(By.NAME, "password") # поле Пароль
+driver.find_element(By.XPATH, "//button[text()='Зарегистрироваться']") #кнопка зарегистрироваться
+driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/form/button') #кнопка Войти
+driver.find_element(By.CLASS_NAME, "AppHeader_header__linkText__3q_va ml-2") #кнопка Конструктор
+driver.find_element(By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[3]/button') # кнопка Выход
+driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button') # кнопка Войти в аккаунт
+driver.find_element(By.CLASS_NAME, "AppHeader_header__link__3D_hX").click()   #кнопка Личный кабинет
+driver.find_element(By.CLASS_NAME, "Auth_link__1fOlj") # кнопка Войти
+driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]/span') # кнопка Соусы
+driver.find_element(By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[3]/span') #кнопка Начинки
+ddriver.find_element(By.XPATH, '//*//*[@id="root"]/div/main/section[1]/div[1]/div[1]/span') #кнопка Булки
+driver.find_element(By.CLASS_NAME, "AppHeader_header__linkText__3q_va ml-2") #кнопка Конструктор
+driver.find_element(By.XPATH, '//*[@id="root"]/div/header/nav/div/a/svg') #кнопка с логотипом сайта
