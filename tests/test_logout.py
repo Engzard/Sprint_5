@@ -1,12 +1,8 @@
-from conftest import *
 
 from locators import *
 class TestLogout:
 
-
-
     def test_account_log_out (self, mail_gen, pass_gen, wait_for_visibility):
-        driver = webdriver.Chrome()
         driver.get("https://stellarburgers.nomoreparties.site/register")
         mail = mail_gen()
         password = pass_gen(6)
@@ -25,4 +21,3 @@ class TestLogout:
         driver.find_element(logout_button).click() # кнопка Выход
         wait_for_visibility(driver, login_button)
         assert "Вход" in driver.find_element(login_button).text
-        driver.quit()

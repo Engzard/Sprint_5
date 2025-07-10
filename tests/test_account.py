@@ -1,4 +1,3 @@
-from conftest import *
 from locators import *
 class TestAccount:
     def test_home_account (self, mail_gen, pass_gen, driver, wait_for_visibility):
@@ -18,4 +17,3 @@ class TestAccount:
         driver.find_element(profile_button).click()  #кнопка Личный кабинет
         wait_for_visibility(driver,logout_button)
         assert "Профиль" in driver.find_element(account_button).text
-        driver.quit()

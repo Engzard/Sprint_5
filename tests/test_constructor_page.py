@@ -1,4 +1,3 @@
-from conftest import *
 
 from locators import *
 class TestConstructorPage:

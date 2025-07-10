@@ -9,7 +9,8 @@ from selenium.webdriver.support import expected_conditions
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
-    return driver
+    yield driver
+    driver.quit()
 @pytest.fixture
 def mail_gen(domain ='mail.ru'):
     login_length = random.randint(4, 10)
